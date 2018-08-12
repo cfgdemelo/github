@@ -31,7 +31,7 @@ class PRPresenter(private var context: Context, private var path: String): PRRec
     }
 
     private fun loadApi(recyclerView: RecyclerView, context: Context) {
-        val apiInterface: PRApiInterface = PRApiConsumer().apiInterface()
+        val apiInterface: ApiInterface = ApiConsumer().apiInterface()
         val call: Call<ArrayList<Pull>> = apiInterface.getPullList(path)
         call.enqueue(object: Callback<ArrayList<Pull>> {
             override fun onResponse(call: Call<ArrayList<Pull>>, response: Response<ArrayList<Pull>>) {
