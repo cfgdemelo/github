@@ -8,6 +8,7 @@ import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.Toast
+import br.com.cfgdemelo.github.R
 import br.com.cfgdemelo.github.adapter.PRRecyclerViewAdapter
 import br.com.cfgdemelo.github.model.*
 import retrofit2.Call
@@ -45,7 +46,7 @@ class PRPresenter(private var context: Context, private var path: String): PRRec
 
             @SuppressLint("ShowToast")
             override fun onFailure(call: Call<ArrayList<Pull>>?, t: Throwable?) {
-                Toast.makeText(context, "Erro ao recuperar Informações", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, R.string.error_get_info, Toast.LENGTH_SHORT).show()
             }
         })
     }

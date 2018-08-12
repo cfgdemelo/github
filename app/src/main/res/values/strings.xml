@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Github Repositories</string>
+    <string name="error_get_info">Erro ao recuperar Informações</string>
 </resources>
