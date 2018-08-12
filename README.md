@@ -1,2 +1,2 @@
 # github
-Aplicativo de consulta à API do GitHub, baseando-se nos repositórios de Java, ordenando pelo número de stars
+Aplicativo Android de consulta à API do GitHub, baseando-se nos repositórios de Java, ordenando pelo número de stars
